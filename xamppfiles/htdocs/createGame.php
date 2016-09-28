@@ -5,7 +5,7 @@ require_once("./init.php");
 
 $initQuery = "SELECT `id`, `target`, `chaser` FROM `$playerTable` WHERE 1";  //Get a list of all of the ID, Target, and Chaser values
 
-$response = mysql_query($initQuery);
+$response = query($initQuery);
 
 $rows = mysql_num_rows($response);                              //The number of rows
 
@@ -39,7 +39,7 @@ for($j = 0; $j<$max-1; $j++){
 }
 $query .= $pplArr[$max-1]["id"].");";
 // echo ($query);
-mysql_query($query);
+query($query);
 
 $chaserQuery = "UPDATE `$playerTable` SET `chaser` = CASE";
 for ($i = 0; $i<$max; $i++){
@@ -50,7 +50,7 @@ for($j = 0; $j<$max-1; $j++){
   $chaserQuery .= $pplArr[$j]["id"].", ";
 }
 $chaserQuery .= $pplArr[$max-1]["id"].");";
-mysql_query($chaserQuery);
+query($chaserQuery);
 
 header("Location:viewTable.php");
 
