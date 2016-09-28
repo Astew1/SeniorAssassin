@@ -3,56 +3,59 @@
 
 /* You might want to try something fancier: */
 /* less: http://lesscss.org/ */
+div {
+    border: 1px solid green;
+}
 
-.text{
+.text {
     color: orange;
     font: italic bold 90px/30px Georgia, serif;
 }
 
-.othertext{
+.othertext {
     font-weight: bolder;
 }
 
-.glyphicon{
+.glyphicon {
     color: #b30000;
     font-size: 20px;
 }
 
-.centered{
+.centered {
     text-align: center
 }
 
-h1{
+h1 {
 }
 
-.nav{
+.nav {
     background: #000000;
 }
 
-#test3{
-    font-style:oblique;
+#test3 {
+    font-style: oblique;
 }
 
-div{
+div {
     border: 0px solid pink;
 }
 
-.bold{
-    font-weight:bold;
+.bold {
+    font-weight: bold;
 }
 
 .underline {
     text-decoration: underline;
 }
 
-.spacer{
+.spacer {
     margin-top: 40px;
 
 }
 
-.big-button{
+.big-button {
     height: 8vw;
-    font-size:4vw;
+    font-size: 4vw;
     border-radius: 20px;
 }
 
@@ -61,6 +64,17 @@ div{
     color: #b30000;
 }
 
-.background-grad {
-    background: linear-gradient(to bottom,gray, white);
+/*.background-grad {*/
+    /*background: linear-gradient(to bottom, gray, white);*/
+/*}*/
+
+
+.safety-background{
+    background-color: #e055f3;
+}
+
+.safety-text-wrapper{
+    margin: 20px auto;
+    color: #F5F5F5;
+    font-size: 28px;
 }
