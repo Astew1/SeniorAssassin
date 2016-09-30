@@ -1,0 +1,35 @@
+div {
+    border: 0px solid green;
+}
+
+
+.glyphicon {
+    color: #b30000;
+    font-size: 20px;
+}
+
+
+
+.nav {
+    background: #000000;
+}
+
+.spacer {
+    margin-top: 40px;
+
+}
+
+.big-button {
+    height: 8vw;
+    font-size: 4vw;
+    border-radius: 20px;
+}
+
+.btn-color {
+    background: #000000;
+    color: #b30000;
+}
+
+.background-grad {
+background: linear-gradient(to bottom, gray, white);
+}
