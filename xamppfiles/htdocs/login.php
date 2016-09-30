@@ -5,14 +5,6 @@
     //$password = md5(mysql_real_escape_string($_POST['password']));
 
     $checklogin = mysql_query("SELECT * FROM `users` WHERE username = '".$username."' AND password = '".$password."';");
-    
-
-    while($row = mysql_fetch_assoc($dave)){
-        foreach($row as $cname => $cvalue){
-            print "$cname: $cvalue\t";
-        }
-        print "\r\n";
-    }
 
     if(mysql_num_rows($checklogin) == 1)
     {
