@@ -17,12 +17,13 @@ if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']))
 elseif(!empty($_POST['username']) && !empty($_POST['password']))
 {
     include_once("./login.php");
-    header("Location:init.php");
+    //header("Location:init.php");
 }
 else
 {
     header("Location:loginform.html");
 }
+echo "logged in";
 
 
 ?>
