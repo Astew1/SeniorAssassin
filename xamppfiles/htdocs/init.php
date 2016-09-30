@@ -23,7 +23,7 @@ else
 {
     header("Location:loginform.html");
 }
-echo "logged in";
+
 
 
 ?>
