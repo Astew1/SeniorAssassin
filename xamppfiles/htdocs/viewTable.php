@@ -57,7 +57,9 @@ echo "</table>";
 mysql_close();
 echo "<br><br><br>";
 echo "<a href=inputform.html> Back to inputform.html </a>";
+echo "<br> <a href = logout.php> Logout </a>";
 echo "</body></html>";
+
 
 
 
