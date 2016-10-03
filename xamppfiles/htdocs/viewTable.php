@@ -23,6 +23,7 @@ tr:nth-child(even) {
 </head>
 <body>";
 
+
 echo "<br>";
 echo "<table style = 'border: 1px solid black, padding: 10px, width:100%;'>";
 echo "  <tr>
