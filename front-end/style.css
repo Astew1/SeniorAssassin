@@ -32,6 +32,11 @@ div {
     text-decoration: underline;
 }
 
+.announcements-text{
+    font-size: 50px;
+    color: whitesmoke;
+    font-family: "Al Nile" ;
+}
 
 
 
@@ -39,8 +44,12 @@ div {
     /*background: linear-gradient(to bottom, gray, white);*/
 /*}*/
 
+.background{
+    background: #424242;
+}
+
 .safety-background{
-    background-color: #e055f3;
+    background-color: indianred;
 }
 
 .safety-text-wrapper{
