@@ -1,0 +1,16 @@
+.nav li{
+    width:25%;
+    border: 1px solid green;
+}
+
+div{
+    border: 1px solid gold;
+}
+
+nav{
+    border: 1px solid blue;
+}
+
+.navbar{
+    border: 1px solid pink;
+}
