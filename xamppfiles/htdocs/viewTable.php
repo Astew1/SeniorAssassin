@@ -30,7 +30,7 @@ echo "  <tr>
     <th>ID</th>
     <th>Name</th>
     <th>Email</th>
-    <th>Phone</th>
+    <th>Password Hash</th>
     <th>target</th>
     <th>chaser</th>
     <th>Kills</th>
@@ -44,7 +44,7 @@ while ($i<$rows){
   echo "    <td>".mysql_result($response, $i, "id")."</td>", PHP_EOL;
   echo "    <td>".mysql_result($response, $i, "name")."</td>", PHP_EOL;
   echo "    <td>".mysql_result($response, $i, "email")."</td>", PHP_EOL;
-  echo "    <td>".mysql_result($response, $i, "phone")."</td>", PHP_EOL;
+  echo "    <td>".mysql_result($response, $i, "password")."</td>", PHP_EOL;
   echo "    <td>".mysql_result($response, $i, "target")."</td>", PHP_EOL;
   echo "    <td>".mysql_result($response, $i, "chaser")."</td>", PHP_EOL;
   echo "    <td>".mysql_result($response, $i, "kills")."</td>", PHP_EOL;
