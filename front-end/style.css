@@ -33,9 +33,9 @@ div {
 }
 
 .announcements-text{
-    font-size: 50px;
+    font-size: 40px;
     color: whitesmoke;
-    font-family: "Al Nile" ;
+    font-family: "Open Sans" ;
 }
 
 
@@ -46,6 +46,10 @@ div {
 
 .background{
     background: #424242;
+}
+
+.announcements-box{
+    background: grey;
 }
 
 .safety-background{
