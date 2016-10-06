@@ -54,10 +54,16 @@ div {
 
 .safety-background{
     background-color: indianred;
+
 }
 
 .safety-text-wrapper{
     margin: 20px auto;
     color: #F5F5F5;
     font-size: 28px;
+}
+
+.mobile-spacer{
+    height: 30px;
+
 }
