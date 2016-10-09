@@ -60,10 +60,6 @@ echo "<br> <a href = logout.php> Logout </a>";
 echo "<br> Session id: ".$_SESSION["id"];
 
 include("stats.php");
-echo $stats["alive"]. "<br>";
-echo $stats["kills"]. "<br>";
-
-
 
 echo "</body></html>";
 ?>

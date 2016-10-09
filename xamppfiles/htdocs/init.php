@@ -18,8 +18,6 @@ elseif(!empty($_POST['username']) && !empty($_POST['password']))
 
     include_once("./login.php");
 
-
-
 }
 else
 {

@@ -52,6 +52,6 @@ for($j = 0; $j<$max-1; $j++){
 $chaserQuery .= $pplArr[$max-1]["id"].");";
 query($chaserQuery);
 
-header("Location:viewTable.php");
+header("Location:index.php");
 
 ?>
