@@ -1,6 +1,6 @@
 <?php
 
-require_once("./init.php");
+require_once("init.php");
 echo "<html>
 <head>
 <style>
@@ -54,17 +54,16 @@ while ($i<$rows){
 }
 
 echo "</table>";
-
-mysql_close();
 echo "<br><br><br>";
 echo "<a href=inputform.html> Back to inputform.html </a>";
 echo "<br> <a href = logout.php> Logout </a>";
 echo "<br> Session id: ".$_SESSION["id"];
+
+include("stats.php");
+echo $stats["alive"]. "<br>";
+echo $stats["kills"]. "<br>";
+
+
+
 echo "</body></html>";
-
-
-
-
-
-
- ?>
+?>
