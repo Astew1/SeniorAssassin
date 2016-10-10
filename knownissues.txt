@@ -1,0 +1,5 @@
+login will fail if there are duplicate username - make another Primary Key?
+Not all of the pages check for login before loading
+login/logout redirect to odd pages
+should make things ALWAYS redirect to .php, NOT .html
+create game will screw up if the players list is only 1 long
