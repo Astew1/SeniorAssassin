@@ -1,9 +1,9 @@
 <?php
 //ONLY ACCESSABLE FROM init.php
 $dbhost = "localhost";
-$database = "assassinTest";
+$database = "seniorAssassin";
 $username = "root";
-$password = "";
+$password = "whsSA";
 $playerTable = "players";
 mysql_connect($dbhost, $username, $password);
 @mysql_select_db($database) or die( "Unable to select database");
