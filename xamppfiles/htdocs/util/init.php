@@ -1,4 +1,4 @@
 <?php
-include_once("dbconnect.php");
-include_once("logincheck.php");
+include_once("util/dbconnect.php");
+include_once("util/logincheck.php");
 ?>

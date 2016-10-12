@@ -2,9 +2,9 @@
 //ONLY ACCESSABLE FROM init.php
 if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']))
 {
-    header("Location:../index.php")
+    header("Location:index.php")
 }
-include_once("dbconnect.php");
+include_once("util/dbconnect.php");
 
 $name = mysql_real_escape_string($_POST["name"]);
 $username = mysql_real_escape_string($_POST["username"]);
@@ -14,6 +14,6 @@ $query = "INSERT INTO `players` (`name`, `username`, `password`) VALUES ('$name'
 $result = mysql_query($query);
 echo $query;
 
-header("Location:../index.php");
+header("Location:index.php");
 
 ?>

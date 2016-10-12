@@ -7,12 +7,12 @@ if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']))
 elseif(!empty($_POST['username']) && !empty($_POST['password']))
 {
 
-    include_once("./login.php");
+    include_once("util/login.php");
 
 }
 else
 {
-    header("Location:loginform.html");
+    header("Location:util/loginform.html");
 }
 
 ?>
