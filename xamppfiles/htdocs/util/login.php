@@ -13,7 +13,7 @@
 
         echo "<h1>Success</h1>";
         echo "<p>We are now redirecting you to the member area.</p>";
-        echo "<br> <a href = index.php> index.php </a>";
+        echo "<br> <a href = ../index.php> index.php </a>";
 
     }
     else

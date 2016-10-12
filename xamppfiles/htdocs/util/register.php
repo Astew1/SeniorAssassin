@@ -14,6 +14,6 @@ $query = "INSERT INTO `players` (`name`, `username`, `password`) VALUES ('$name'
 $result = mysql_query($query);
 echo $query;
 
-header("Location:index.php");
+header("Location:"$_SERVER['DOCUMENT_ROOT']."/util/index.php");
 
 ?>

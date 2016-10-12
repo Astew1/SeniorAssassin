@@ -12,7 +12,7 @@ elseif(!empty($_POST['username']) && !empty($_POST['password']))
 }
 else
 {
-    header("Location:util/loginform.html");
+    header("Location:".$_SERVER['DOCUMENT_ROOT']."/util/loginform.html");
 }
 
 ?>
