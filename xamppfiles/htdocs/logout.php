@@ -3,7 +3,7 @@
 session_start();
 unset($_SESSION['Username']);
 unset($_SESSION['LoggedIn']);
-header("Location:inputform.html");
+header("Location:index.php");
 
 
 ?>

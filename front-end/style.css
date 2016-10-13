@@ -32,6 +32,11 @@ div {
     text-decoration: underline;
 }
 
+.announcements-text{
+    font-size: 40px;
+    color: whitesmoke;
+    font-family: "Open Sans" ;
+}
 
 
 
@@ -39,12 +44,26 @@ div {
     /*background: linear-gradient(to bottom, gray, white);*/
 /*}*/
 
+.background{
+    background: #424242;
+}
+
+.announcements-box{
+    background: grey;
+}
+
 .safety-background{
-    background-color: #e055f3;
+    background-color: indianred;
+
 }
 
 .safety-text-wrapper{
     margin: 20px auto;
     color: #F5F5F5;
     font-size: 28px;
+}
+
+.mobile-spacer{
+    height: 30px;
+
 }
