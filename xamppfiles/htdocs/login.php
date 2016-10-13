@@ -1,4 +1,5 @@
 <?php
+    //ONLY ACCESSABLE FROM init.php
     $username = mysql_real_escape_string($_POST['username']);
     $password = md5($_POST['password']);
     $query = "SELECT * FROM `players` WHERE username = '".$username."' AND password = '".$password."';";
@@ -13,7 +14,7 @@
 
         echo "<h1>Success</h1>";
         echo "<p>We are now redirecting you to the member area.</p>";
-        echo "<br> <a href = ../index.php> index.php </a>";
+        echo "<br> <a href = index.php> index.php </a>";
 
     }
     else

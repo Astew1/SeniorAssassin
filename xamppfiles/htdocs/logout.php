@@ -6,5 +6,4 @@ unset($_SESSION['LoggedIn']);
 header("Location:index.php");
 
 
-
 ?>

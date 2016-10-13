@@ -1,5 +1,5 @@
 <?php
-require_once("util/init.php");
+require_once("init.php");
 require_once("action.html");
 echo '<div class="target">';
 $result = mysql_query(mysql_real_escape_string("SELECT * FROM `players` WHERE id = ".$_SESSION['id']));
