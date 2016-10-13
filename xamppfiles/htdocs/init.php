@@ -1,11 +1,10 @@
 <?php
 include("functions.php");
 $dbhost = "localhost";
-$database = "assassinTest";
+$database = "seniorAssassin";
 $username = "root";
-$password = "";
+$password = "whsSA";
 $playerTable = "players";
-
 mysql_connect($dbhost, $username, $password);
 @mysql_select_db($database) or die( "Unable to select database");
 
@@ -18,8 +17,6 @@ elseif(!empty($_POST['username']) && !empty($_POST['password']))
 {
 
     include_once("./login.php");
-
-
 
 }
 else

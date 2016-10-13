@@ -1,18 +1,12 @@
-.nav li{
-    border: 1px solid green;
+.navbar-brand {
+    padding: 0px;
+}
+.navbar-brand>img {
+    height: 100%;
+    padding: 15px;
+    width: auto;
 }
 
-div{
-    border: 1px solid gold;
-}
-
-nav{
-    border: 1px solid blue;
-}
-
-.navbar{
-    border: 1px solid pink;
-}
 .navbar-default {
     background-color: #000000;
     border-color: #1e1d1d;
