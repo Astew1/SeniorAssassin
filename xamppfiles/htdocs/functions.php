@@ -6,7 +6,4 @@ function query($queryString){
   return $response;
 }
 
-
-
-
 ?>
