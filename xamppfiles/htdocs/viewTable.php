@@ -35,7 +35,7 @@ echo "  <tr>
     <th>chaser</th>
     <th>Kills</th>
     </tr>", PHP_EOL;
-$response = query("SELECT * FROM players WHERE 1");
+$response = mysql_query("SELECT * FROM players WHERE 1");
 $rows = mysql_num_rows($response);
 $i = 0;
 while ($i<$rows){
