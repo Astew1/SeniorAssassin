@@ -9,7 +9,6 @@ div {
 }
 
 
-
 .nav {
     background: #000000;
 }
@@ -19,17 +18,28 @@ div {
 
 }
 
+.button-left-right-margins{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 .big-button {
-    height: 8vw;
-    font-size: 4vw;
+    height: 100px;
+    font-size: 50px;
     border-radius: 20px;
+
 }
 
-.btn-color {
+.ass-btn-color {
     background: #000000;
-    color: #b30000;
+    color: green;
 }
 
-.background-grad {
-background: linear-gradient(to bottom, gray, white);
+.die-btn-color {
+    background: #000000;
+    color: darkred;
+}
+
+body {
+    background: -webkit-gradient(linear, left top, left bottom, from(gray), to(white)) fixed;
 }
