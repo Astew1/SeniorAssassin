@@ -3,6 +3,11 @@
 
 /* You might want to try something fancier: */
 /* less: http://lesscss.org/ */
+
+*{
+    font-family: "Open Sans", sans-serif;
+}
+
 div {
     border: 0px solid green;
 }
@@ -58,8 +63,6 @@ div {
 
 body {
     background: -webkit-gradient(linear, left top, left bottom, from(gray), to(white)) fixed;
-    font-family: "Open Sans";
-
 }
 
 .button-left-right-margins {
