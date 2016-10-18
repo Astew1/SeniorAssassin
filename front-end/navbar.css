@@ -11,18 +11,3 @@
 
 
 
-
-#square{
-    background-color:red;
-    width:100px;
-    height:100px;
-    position:relative;
-    animation: move 0.1s infinite;
-
-}
-
-@-webkit-keyframes move {
-    0%{top:0px;}
-    50%{top:200px;}
-    100%{top:0px;}
-}
