@@ -35,7 +35,12 @@ div {
 
 .announcements-text {
     font-size: 40px;
-    color: whitesmoke;
+    color: darkred;
+    border-radius: 20px;
+}
+
+.safety-text {
+    font-size: 40px;
     border-radius: 20px;
 }
 
@@ -44,17 +49,11 @@ div {
 }
 
 .announcements-box{
-    background: grey;
+    background: black;
 }
 
 .safety-background{
-    background-color: indianred;
-}
-
-.safety-text-wrapper{
-    margin: 20px auto;
-    color: #F5F5F5;
-    font-size: 40px;
+    background-color: black;
 }
 
 .mobile-spacer{
