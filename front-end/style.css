@@ -34,7 +34,7 @@ div {
 }
 
 .announcements-text {
-    font-size: 40px;
+    font-size: 30px;
     color: darkred;
     border-radius: 20px;
 }
@@ -67,4 +67,10 @@ body {
 .button-left-right-margins {
     margin-left: 30px;
     margin-right: 30px;
+}
+
+.actual-announcements-text{
+    font-size: 16px;
+    color: whitesmoke;
+    text-align: left;
 }
