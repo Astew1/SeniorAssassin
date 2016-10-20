@@ -3,5 +3,5 @@
   //echo $_SESSION['LoggedIn'];
 	//echo $_SESSION['Username'];
 
-	require_once("Location:index.html");
+	require_once("index.html");
 ?>
