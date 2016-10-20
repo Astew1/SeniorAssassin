@@ -1,14 +1,14 @@
 <?php
-    //ONLY ACCESSABLE FROM init.php
     $username = mysql_real_escape_string($_POST['username']);
     $password = md5($_POST['password']);
     $query = "SELECT * FROM `players` WHERE username = '".$username."' AND password = '".$password."';";
     $checklogin = mysql_query($query);
+
     if($checklogin==false && mysql_num_rows($checklogin) == 1)
     {
         $row = mysql_fetch_array($checklogin);
 
-        $_SESSION['Username'] = $username;
+        $_SESSION['username'] = $username;
         $_SESSION['LoggedIn'] = 1;
         $_SESSION['id'] = $row["id"];
 

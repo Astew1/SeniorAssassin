@@ -9,7 +9,7 @@ include_once("dbconnect.php");
 // mysql_connect($dbhost, $username, $password);
 // @mysql_select_db($database) or die( "Unable to select database");
 session_start();
-if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']))
+if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['username']))
 {
     $loggedIn = 1;
 }
