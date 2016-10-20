@@ -1,13 +1,13 @@
 <?php
 
-//include_once("dbconnect.php");
-$dbhost = "localhost";
-$database = "seniorAssassin";
-$username = "root";
-$password = "whsSA";
-$playerTable = "players";
-mysql_connect($dbhost, $username, $password);
-@mysql_select_db($database) or die( "Unable to select database");
+include_once("dbconnect.php");
+// $dbhost = "localhost";
+// $database = "seniorAssassin";
+// $username = "root";
+// $password = "whsSA";
+// $playerTable = "players";
+// mysql_connect($dbhost, $username, $password);
+// @mysql_select_db($database) or die( "Unable to select database");
 session_start();
 if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']))
 {
@@ -16,7 +16,7 @@ if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']))
 elseif(!empty($_POST['username']) && !empty($_POST['password']))
 {
 
-    include_once("./login.php");
+    header("./login.php");
 
 }
 else
