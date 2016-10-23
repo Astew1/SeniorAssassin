@@ -23,6 +23,9 @@ else
 {
     header("Location:loginform.html");
 }
+echo $loggedIn;
+echo $_SESSION['LoggedIn'];
+echo $_SESSION['username'];
 
 
 
