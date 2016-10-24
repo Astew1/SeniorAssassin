@@ -1,4 +1,5 @@
 <?php
+    require_once("dbconnect.php");
     $username = mysql_real_escape_string($_POST['Username']);
     $password = md5($_POST['password']);
     $query = "SELECT * FROM `players` WHERE username = '".$username."' AND password = '".$password."';";
