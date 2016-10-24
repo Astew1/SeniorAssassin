@@ -17,60 +17,35 @@ div {
     font-size: 20px;
 }
 
-.centered {
+
+/*makes every h2 and h3 inside of "centered" elements centered*/
+.centered h2,h3{
     text-align: center
 }
 
-.nav {
-    background: #000000;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-.announcements-text {
-    font-size: 30px;
-    color: darkred;
-    border-radius: 20px;
-}
-
-.safety-text {
-    font-size: 40px;
-    border-radius: 20px;
-}
-
-.background{
-    background: #424242;
-}
-
-.announcements-box{
-    background: black;
-}
-
-.safety-background{
-    background-color: black;
-}
-
-.mobile-spacer{
-    height: 30px;
-}
 
 body {
-    background: -webkit-gradient(linear, left top, left bottom, from(gray), to(white)) fixed;
+     background: whitesmoke;
 }
 
-.button-left-right-margins {
-    margin-left: 30px;
-    margin-right: 30px;
+.announcements-header{
+    color: darkred;
+}
+.time-content{
+    color:#D32F2F;
+}
+.safety-header{
+    color:#43A047;
+}
+h3{
+    color:whitesmoke;
 }
 
-.actual-announcements-text{
-    font-size: 16px;
-    color: whitesmoke;
-    text-align: left;
+.content-box{
+    background: #546E7A;
+    padding:20px;
+    margin-bottom:20px;
+    height:200px;
 }
+
+
