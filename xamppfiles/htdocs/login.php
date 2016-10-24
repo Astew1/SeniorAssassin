@@ -1,5 +1,5 @@
 <?php
-    $username = mysql_real_escape_string($_POST['username']);
+    $username = mysql_real_escape_string($_POST['Username']);
     $password = md5($_POST['password']);
     $query = "SELECT * FROM `players` WHERE username = '".$username."' AND password = '".$password."';";
     $checklogin = mysql_query($query);
@@ -8,7 +8,7 @@
     {
         $row = mysql_fetch_array($checklogin);
 
-        $_SESSION['username'] = $username;
+        $_SESSION['Username'] = $username;
         $_SESSION['LoggedIn'] = 1;
         $_SESSION['id'] = $row["id"];
 
