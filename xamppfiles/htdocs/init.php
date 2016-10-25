@@ -17,13 +17,13 @@ if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']))
 elseif(!empty($_POST['Username']) && !empty($_POST['password']))
 {
 
-    header("./login.php");
+    header("Location: login.php");
     echo "inside login loop!";
 
 }
 else
 {
-    header("Location:loginform.html");
+    header("Location: loginform.html");
 }
 echo "after everything!";
 print_r($_SESSION);
