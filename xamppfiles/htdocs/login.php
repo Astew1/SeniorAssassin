@@ -31,7 +31,7 @@
       echo "<br>";
       echo $checklogin;
       echo "<br>";
-      echo $checklogin==false;
+      echo $checklogin===false;
       echo "<br>";
       echo mysql_num_rows($checklogin);
         echo "<h1>Error</h1>";
