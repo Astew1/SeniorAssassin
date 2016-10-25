@@ -19,8 +19,8 @@ div {
 
 
 /*makes every h2 and h3 inside of "centered" elements centered*/
-.centered h2,h3{
-    text-align: center
+.centered h2, h3{
+    text-align: center;
 }
 
 
@@ -29,23 +29,33 @@ body {
 }
 
 .announcements-header{
-    color: darkred;
+    color: #000000;
 }
 .time-content{
-    color:#D32F2F;
+    color:#FF6D0B;
 }
 .safety-header{
-    color:#43A047;
+    color: #FF6D0B;
 }
 h3{
-    color:whitesmoke;
+    color: whitesmoke;
 }
 
 .content-box{
-    background: #546E7A;
+    background: dimgray;
     padding:20px;
     margin-bottom:20px;
     height:200px;
 }
 
+.stats-box{
+    background: dimgray;
+    padding:20px;
+    margin-bottom:20px;
+    height:270px;
+}
+
+.stats-box h3{
+    color:red;
+}
 
