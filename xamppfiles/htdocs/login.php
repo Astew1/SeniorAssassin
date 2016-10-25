@@ -22,7 +22,7 @@
     else
     {
       // echo $checklogin;
-       echo "is it false?: "
+       echo "is it false?: ";
        echo $checklogin==false;
        //print_r(mysql_fetch_array($checklogin));
       // echo "rowsnums: ".mysql_num_rows($checklogin);
