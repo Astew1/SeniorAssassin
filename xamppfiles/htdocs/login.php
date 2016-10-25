@@ -5,7 +5,7 @@
     $query = "SELECT * FROM `players` WHERE username = '".$username."' AND password = '".$password."';";
     $checklogin = mysql_query($query);
 
-    if($mysql_num_rows($checklogin) == 1)
+    if($checklogin == false && $mysql_num_rows($checklogin) == 1)
     {
         $row = mysql_fetch_array($checklogin);
 
