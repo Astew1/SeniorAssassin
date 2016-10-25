@@ -52,8 +52,19 @@
         });
         var marker = new google.maps.Marker({
             position: wayland,
-            map: map
+            map: map,
+
         });
+        var latit = [39, 40, 41, 42, 43];
+        var long = [-70, -71, -72, -73, -74];
+        for (var i = 0; i < latit.length; i++) {
+            var latLng = {lat: latit[i], lng: long[i]};
+            var marker = new google.maps.Marker({
+                position: latLng,
+                map: map
+            });
+        }
+
     }
 </script>
 <script async defer
