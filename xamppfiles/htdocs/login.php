@@ -23,6 +23,7 @@
     {
       echo $checklogin;
       echo $query;
+      echo "rowsnums: ".mysql_num_rows($checklogin);
       print_r (mysql_fetch_array($checklogin));
         echo "<h1>Error</h1>";
         echo "<p>Sorry, your account could not be found. Please <a href=\"init.php\">click here to try again</a>.</p>";
