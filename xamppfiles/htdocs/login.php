@@ -24,10 +24,8 @@
       // echo $checklogin;
        echo $query;
        echo "</br>";
-       print_r ($_POST);
-       echo $username;
-       echo $password;
-
+       print_r($checklogin);
+       echo $checklogin;
       // echo "rowsnums: ".mysql_num_rows($checklogin);
       // print_r (mysql_fetch_array($checklogin));
         echo "<h1>Error</h1>";
