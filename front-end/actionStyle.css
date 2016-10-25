@@ -40,6 +40,21 @@ div {
     color: darkred;
 }
 
+.content-box{
+    background: #546E7A;
+    padding:20px;
+    margin-bottom:20px;
+    height:200px;
+}
+
+.safety-header{
+    color:#43A047;
+}
+
+.centered{
+    text-align: center
+}
+
 body {
-    background: -webkit-gradient(linear, left top, left bottom, from(gray), to(white)) fixed;
+    background: whitesmoke;
 }
