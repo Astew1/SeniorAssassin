@@ -5,7 +5,7 @@
     $query = "SELECT * FROM `players` WHERE username = '".$username."' AND password = '".$password."';";
     $checklogin = mysql_query($query);
 
-    if($checklogin==false && mysql_num_rows($checklogin) == 1)
+    if($checklogin === false && (mysql_num_rows($checklogin) == 1))
     {
         $row = mysql_fetch_array($checklogin);
 
@@ -21,6 +21,19 @@
     }
     else
     {
+      // echo $checklogin;
+       //echo "is it false?: ";
+      //  //echo $checklogin==false;
+      //  print_r(mysql_fetch_array($checklogin));
+      //  echo "rowsnums: ".mysql_num_rows($checklogin);
+      // print_r (mysql_fetch_array($checklogin));
+      echo $query;
+      echo "<br>";
+      echo $checklogin;
+      echo "<br>";
+      echo $checklogin===false;
+      echo "<br>";
+      echo mysql_num_rows($checklogin);
         echo "<h1>Error</h1>";
         echo "<p>Sorry, your account could not be found. Please <a href=\"init.php\">click here to try again</a>.</p>";
     }
