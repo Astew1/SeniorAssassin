@@ -33,6 +33,14 @@
       echo "<br>";
       echo $checklogin===false;
       echo "<br>";
+      if($checklogin===false){
+        echo "checklogin === false";
+      }
+      echo "<br>";
+      if($checklogin==false){
+        echo "checklogin==false";
+      }
+      echo "<br>";
       echo mysql_num_rows($checklogin);
         echo "<h1>Error</h1>";
         echo "<p>Sorry, your account could not be found. Please <a href=\"init.php\">click here to try again</a>.</p>";
