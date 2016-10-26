@@ -26,29 +26,29 @@ div {
 .big-button {
     height: 100px;
     font-size: 50px;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 
 }
 
 .ass-btn-color {
     background: #000000;
-    color: green;
+    color: #FF6D0B;
 }
 
 .die-btn-color {
     background: #000000;
-    color: darkred;
+    color: whitesmoke;
 }
 
 .content-box{
-    background: #546E7A;
+    background: dimgrey;
     padding:20px;
     margin-bottom:20px;
     height:200px;
 }
 
 .safety-header{
-    color:#43A047;
+    color: #FF6D0B;
 }
 
 .centered{
@@ -57,4 +57,8 @@ div {
 
 body {
     background: whitesmoke;
+}
+
+h3 {
+    color: #000000;
 }
