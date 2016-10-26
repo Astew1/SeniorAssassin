@@ -1,6 +1,7 @@
 <?php
-    require_once("dbconnect.php");
     session_start();
+    require_once("dbconnect.php");
+
     $username = mysql_real_escape_string($_POST['Username']);
     $password = md5($_POST['password']);
     $query = "SELECT * FROM `players` WHERE username = '".$username."' AND password = '".$password."';";
@@ -22,27 +23,6 @@
     }
     else
     {
-      // echo $checklogin;
-       //echo "is it false?: ";
-      //  //echo $checklogin==false;
-      //  print_r(mysql_fetch_array($checklogin));
-      //  echo "rowsnums: ".mysql_num_rows($checklogin);
-      // print_r (mysql_fetch_array($checklogin));
-      // echo $query;
-      // echo "<br>";
-      // echo $checklogin;
-      // echo "<br>";
-      // echo $checklogin===false;
-      // echo "<br>";
-      // if($checklogin===false){
-      //   echo "checklogin === false";
-      // }
-      // echo "<br>";
-      // if($checklogin==false){
-      //   echo "checklogin==false";
-      // }
-      // echo "<br>";
-      // echo mysql_num_rows($checklogin);
         echo "<h1>Error</h1>";
         echo "<p>Sorry, your account could not be found. Please <a href=\"init.php\">click here to try again</a>.</p>";
     }
