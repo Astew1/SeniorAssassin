@@ -1,5 +1,6 @@
 <?php
 	// require_once("init.php");
+	session_start();
   print_r($_SESSION);
 	if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])){
 		echo "true";
