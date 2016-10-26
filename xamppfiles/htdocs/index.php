@@ -6,7 +6,6 @@
 	else{
 		echo "false";
 	}
-	echo "<br>".!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']);
 echo "<br>";
 print_r($_SESSION);
 	//echo $_SESSION['LoggedIn'];
