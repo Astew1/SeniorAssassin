@@ -4,7 +4,7 @@
         #map {
             height: 100%;
             width: 100%;
-        } 
+        }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -53,8 +53,20 @@
         });
         var marker = new google.maps.Marker({
             position: wayland,
-            map: map
+            map: map,
+
         });
+        var latitu = [39, 40, 41, 42, 43];
+        var long = [-70, -71, -72, -73, -74];
+        for (var i = 0; i < latitu.length; i++) {
+            var latLng = {lat: latitu[i], lng: long[i]};
+            var marker = new google.maps.Marker({
+                position: latLng,
+                map: map
+            });
+        }
+
+        //seriously
     }
 </script>
 <script async defer
