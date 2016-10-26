@@ -6,8 +6,10 @@
 	else{
 		echo "false";
 	}
-	echo !empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']);
-  //echo $_SESSION['LoggedIn'];
+	echo "<br>".!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']);
+echo "<br>";
+print_r($_SESSION);
+	//echo $_SESSION['LoggedIn'];
 	//echo $_SESSION['Username'];
 
 	require_once("index.html");
