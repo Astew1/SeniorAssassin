@@ -25,20 +25,20 @@ div {
 
 
 body {
-     background: whitesmoke;
+     background: #212121;
 }
 
 .announcements-header{
-    color: #000000;
+    color: #F57C00;
 }
 .time-content{
-    color:#FF6D0B;
+    color:#F57C00;
 }
 .safety-header{
-    color: #FF6D0B;
+    color: #F57C00;
 }
 h3{
-    color: whitesmoke;
+    color: #212121;
 }
 
 .content-box{
