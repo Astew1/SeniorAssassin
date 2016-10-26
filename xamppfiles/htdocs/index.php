@@ -12,5 +12,5 @@ print_r($_SESSION);
 	//echo $_SESSION['LoggedIn'];
 	//echo $_SESSION['Username'];
 
-	require_once("index.html");
+	// require_once("index.html");
 ?>
