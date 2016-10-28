@@ -1,21 +1,6 @@
-div {
-    border: 0px solid green;
-}
-
-
-.glyphicon {
-    color: #b30000;
-    font-size: 20px;
-}
-
-
-.nav {
-    background: #000000;
-}
 
 .spacer {
     margin-top: 40px;
-
 }
 
 .button-left-right-margins {
@@ -32,7 +17,7 @@ div {
 
 .ass-btn-color {
     background: #000000;
-    color: #FF6D0B;
+    color: #F57C00;
 }
 
 .die-btn-color {
@@ -48,7 +33,7 @@ div {
 }
 
 .safety-header{
-    color: #FF6D0B;
+    color: #F57C00;
 }
 
 .centered{
