@@ -17,7 +17,7 @@
 
         echo "<h1>Success</h1>";
         echo "<p>We are now redirecting you to the member area.</p>";
-        //header("Location: index.php");
+        header("Location: index.php");
         echo "<br>If you haven't been redirected: <a href = index.php> Home Page </a>";
 
     }
