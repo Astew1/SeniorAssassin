@@ -1,10 +1,13 @@
 <?php
+    session_start();
+    require_once("dbconnect.php");
+
     $username = mysql_real_escape_string($_POST['Username']);
     $password = md5($_POST['password']);
     $query = "SELECT * FROM `players` WHERE username = '".$username."' AND password = '".$password."';";
     $checklogin = mysql_query($query);
 
-    if($checklogin==false && mysql_num_rows($checklogin) == 1)
+    if((@mysql_num_rows($checklogin) == 1))
     {
         $row = mysql_fetch_array($checklogin);
 

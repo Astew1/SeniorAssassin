@@ -4,5 +4,13 @@ ul {
 }
 
 #status{
-    color:green;
+    color: darkgreen;
+}
+
+#time-alive, #top-kills, #your-kills{
+    color: #FF6D0B;
+}
+
+h2 {
+    color: #000000;
 }

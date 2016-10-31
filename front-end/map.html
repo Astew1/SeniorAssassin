@@ -4,7 +4,7 @@
         #map {
             height: 100%;
             width: 100%;
-        } 
+        }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,34 +14,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class = "nav navbar navbar-default navbar-inverse" role = "navigation">
+<nav class = "nav navbar navbar-default navbar-static-top navbar-inverse" role = "navigation">
 
     <div class = "navbar-header">
-
-
-        <button type = "button" class = "navbar-toggle"
-                data-toggle = "collapse" data-target = "#example-navbar-collapse">
+        <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navbar-collapse-toggle">
             <span class = "sr-only">Toggle navigation</span>
             <span class = "icon-bar"></span>
             <span class = "icon-bar"></span>
             <span class = "icon-bar"></span>
         </button>
-
-        <a class = "nav navbar-brand" href = "index.html">Assassin</a>
+        <a class = "nav navbar-brand" href = "index.html">
+            <img src="navbar_logo.png" alt="Senior Assassin">
+        </a>
     </div>
 
-    <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
-
+    <div class = "collapse navbar-collapse" id = "navbar-collapse-toggle">
         <ul class = "nav navbar-nav">
-            <li type = "tab"><a href = "action.html"><span class="glyphicon glyphicon-screenshot"></span></a></li>
-            <li type = "tab"><a href = "map.html"><span class="glyphicon glyphicon-globe"></span></a></li>
-            <li type = "tab"><a href = "stats.html"><span class="glyphicon glyphicon-stats"></span></a></li>
-            <li type = "tab"><a href = "rules.html"><span class="glyphicon glyphicon-book"></span></a></li>
+            <li type = "tab"><a href = "action.html"><span class="glyphicon glyphicon-screenshot"></span> Action</a></li>
+            <li type = "tab"><a href = "map.html"><span class="glyphicon glyphicon-globe"></span> Map</a></li>
+            <li type = "tab"><a href = "stats.html"><span class="glyphicon glyphicon-stats"></span> Stats</a></li>
+            <li type = "tab"><a href = "rules.html"><span class="glyphicon glyphicon-book"></span> Rules</a></li>
         </ul>
-
     </div>
 
 </nav>
+
 <div id="map"></div>
 <script>
     function initMap() {
@@ -52,8 +49,20 @@
         });
         var marker = new google.maps.Marker({
             position: wayland,
-            map: map
+            map: map,
+
         });
+        var latitu = [39, 40, 41, 42, 43];
+        var long = [-70, -71, -72, -73, -74];
+        for (var i = 0; i < latitu.length; i++) {
+            var latLng = {lat: latitu[i], lng: long[i]};
+            var marker = new google.maps.Marker({
+                position: latLng,
+                map: map
+            });
+        }
+
+        //seriously
     }
 </script>
 <script async defer
