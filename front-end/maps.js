@@ -1,56 +1,56 @@
 $(function() {
-    console.log('hello world :o');
-
-    $.get('/dreams', function(dreams) {
-        dreams.forEach(function(dream) {
-            $('<li></li>').text(dream).appendTo('ul#dreams');
-        });
-    });
-
-    $('form').submit(function(event) {
-        event.preventDefault();
-        dream = $('input').val();
-        $.post('/dreams?' + $.param({dream: dream}), function() {
-            $('<li></li>').text(dream).appendTo('ul#dreams');
-            $('input').val('');
-            $('input').focus();
-        });
-    });
-
+    initMap();
 });
-
-var map;
-function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 42.3425954, lng: -71.3772822},
-        zoom: 15
-    });
-    var marker = new google.maps.Marker({
-        position: new google.maps.LatLng([42.3425954], [-71.3772822]),
-        map: map
-    });
-
-
-    layer = new google.maps.FusionTablesLayer({
-        map: map,
-        heatmap: { enabled: false },
-        query: {
-            select: "col2, col0",
-            from: "1pbba_dFcpWQKQDXQUt9RNXp16GqX5Jz-NraafEI",
-            where: ""
-        },
-        options: {
-            styleId: 3,
-            templateId: 3
+    function initMap() {
+        var mapa = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: {lat: 42.1425954, lng: -71.1772822}
+        });
+//        var marker = new google.maps.Marker({
+//            position: wayland,
+//            map: mapa,
+//
+//        });
+        var latitu = [39, 40, 41, 42, 43];
+        var long = [-70, -71, -72, -73, -74];
+        for (var i = 0; i < latitu.length; i++) {
+            var latLng = {lat: latitu[i], lng: long[i]};
+            var marker = new google.maps.Marker({
+                position: latLng,
+                map: mapa
+            });
         }
-    });
-}
 
+        var infoWindow = new google.maps.InfoWindow({map: mapa});
 
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
 
+                var pos = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
 
-var yup = new google.maps.Marker({
-    position: {lat: 42, lng: -71},
-    map: map,
-    title: 'Death'
-});
+                infoWindow.setPosition(pos);
+                infoWindow.setContent('Location found.');
+                map.setCenter(pos);
+            }, function() {
+                handleLocationError(true, infoWindow, map.getCenter());
+            });
+        } else {
+            // Browser doesn't support Geolocation
+            handleLocationError(false, infoWindow, map.getCenter());
+        }
+
+        var marker = new google.map.Marker({
+            position: pos,
+            map: mapa
+        })
+    }
+
+    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+            'Error: The Geolocation service failed.' :
+            'Error: Your browser doesn\'t support geolocation.');
+    }
